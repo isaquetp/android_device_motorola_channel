@@ -15,15 +15,15 @@
 #
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := channel
-PRODUCT_NAME := omni_$(PRODUCT_DEVICE)
+PRODUCT_NAME := twrp_channel
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(7) play
 PRODUCT_MANUFACTURER := motorola
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)/device.mk)
+$(call inherit-product, device/motorola/channel/device.mk)
